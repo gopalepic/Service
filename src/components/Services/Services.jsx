@@ -1,41 +1,60 @@
 import React from "react";
-import { FaCameraRetro } from "react-icons/fa";
-import { GiNotebook } from "react-icons/gi";
 import { SlNote } from "react-icons/sl";
+import { FaFirefoxBrowser } from "react-icons/fa6";
+import { FaMobileButton } from "react-icons/fa6";
+import { MdOutlineDeveloperMode } from "react-icons/md";
+import { FaWordpress } from "react-icons/fa";
+import { TbPasswordMobilePhone } from "react-icons/tb";
+
+
 
 const skillsData = [
   {
-    name: "App Development",
-    icon: <FaCameraRetro className="text-4xl text-primary" />,
+    name: "Web Development",
+    icon: <FaFirefoxBrowser className="text-4xl text-primary" />,
     link: "#",
     description:
-      "ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod metus vel sem bibendum, a bibendum justo tempor. Sed vel lectus",
+      "A website or web application is made through a process called web development. It involves the development of the website or web applications front - end(client - side) and back - end(server - side).We provide complete web development services to assist companies in creating an online presence and achieving their digital objectives.Our teams of experts work closely with our clients to create custom websites that are user - friendly,attractive, and optimized for conversions.",
     aosDelay: "0",
   },
   {
-    name: "Web Designing",
-    icon: <GiNotebook className="text-4xl text-primary" />,
+    name: "Mobile App Development",
+    icon: <FaMobileButton className="text-4xl text-primary" />,
     link: "#",
     description:
-      "ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod metus vel sem bibendum, a bibendum justo tempor. Sed vel lectus",
+      "App development can be a valuable investment for businesses looking to improve customers engagement and to reach new markets.We develop Android and IOS applications for our clients,startups,and enterprises.Depending on your business needs,our experienced and dedicated developers can design and develop a creative,customer - focused mobile application that provides a distinctive and user - friendly experience for your users.",
     aosDelay: "300",
   },
   {
-    name: "Graphic Designing",
-    icon: <SlNote className="text-4xl text-primary" />,
+    name: "Software Development",
+    icon: <MdOutlineDeveloperMode className="text-4xl text-primary" />,
     link: "#",
     description:
-      "ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod metus vel sem bibendum, a bibendum justo tempor. Sed vel lectus",
+      "Software development is a multi-stage process that starts with planning and ends with maintenance. The aim of software development is to design and produce software applications that are user-friendly, dependable, and efficient. The process of planning, building, testing, and maintaining software applications is known as software development. Planning, analysis, design, execution, and maintenance are some of the processes involved.",
     aosDelay: "500",
   },
   {
-    name: "Digital Marketing",
+    name: "Software Testing",
     icon: <SlNote className="text-4xl text-primary" />,
     link: "#",
     description:
-      "ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod metus vel sem bibendum, a bibendum justo tempor. Sed vel lectus",
+      " In the fast-paced world of software development, ensuring the quality and reliability of software products is crucial for success. This is where Kanthariya Technologies steps in as a leading provider of exceptional software testing services. With a commitment to excellence and a team of highly skilled professionals,Kanthariya Technologies offers a unique and comprehensive testing solution that can revolutionize your software development process.",
     aosDelay: "700",
   },
+  {
+    name: "Word Press",
+    icon: <FaWordpress className="text-4xl text-primary" />,
+    link: "#",
+    description:
+      " When we create a website design for your company, we focus on creating an attractive and user-friendly website that effectively communicates company s brand and message.It reflects the company s commitment to sustainability,outdoor adventure.Web design is the process of creating a visually appealing and user - friendly experience for a website or web application.",
+    aosDelay: "700",
+  },{
+    name: "Digital Marketing",
+    icon: <TbPasswordMobilePhone className="text-4xl text-primary" />,
+    link: "#",
+    description:"We provide web design services that assist businesses in enhancing their online performance through digital marketing, numerous techniques. Your web audience can be found, expanded, and converted with the help of our devoted team of internet marketers. It relates to recent technologies like Social Media Optimisation, Search Engine Optimisation and Social Media Marketing. ",
+    aosDelay: "700",
+  }
 ];
 const Services = () => {
   return (
@@ -61,7 +80,7 @@ const Services = () => {
           </div>
 
           {/* services cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
             {skillsData.map((skill) => (
               <div
                 key={skill.name}
