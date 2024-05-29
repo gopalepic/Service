@@ -35,10 +35,7 @@ const Hero = () => {
               <span className="text-primary">kanthariya Technology</span>
             </h1>
             <p data-aos="fade-up" data-aos-delay="300">
-              Your partner in navigating the ever-evolving landscape of digital
-              marketing. From conceptualization to execution, we craft tailored
-              solutions that drive results and elevate your brand to new
-              heights.
+            With over three years of dedicated service, Kanthariya Technologies is a versatile IT solutions provider committed to excellence across various domains. Our rich legacy spans decades in industries such as textiles, automobiles, mills, and more. We leverage this extensive experience to deliver comprehensive IT services tailored to meet your unique business needs. Join us in shaping the future with innovative and reliable technological solutions.
             </p>
             <button
               data-aos="fade-up"
