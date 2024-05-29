@@ -37,7 +37,6 @@ const Navbar = () => {
           {/* Logo section */}
           <a
             target="_blank"
-            href="https://www.youtube.com/channel/UC1H-a1MKEFXRiFlGNLcy7gQ?sub_confirmation=1"
             className="flex items-center gap-3"
           >
             <img src={Logo} alt="" className="w-10 rounded-sm" />
@@ -52,7 +51,7 @@ const Navbar = () => {
                 <li key={id} className="py-4">
                   <a
                     href={link}
-                    className=" text-lg font-medium  hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-colors duration-500  "
+                    className=" text-lg font-medium  hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-colors duration-5  "
                   >
                     {name}
                   </a>
