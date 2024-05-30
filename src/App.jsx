@@ -1,15 +1,11 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
+import { BrowserRouter as Router , Routes , Route } from "react-router-dom";
 import "aos/dist/aos.css";
 
 // Component import
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
-import BrandsLogo from "./components/BrandsLogo/BrandsLogo.jsx";
-import Services from "./components/Services/Services";
-import Testimonial from "./components/Testimonial/Testimonial";
-import BlogsComp from "./components/Blogs/BlogsComp.jsx";
-import Footer from "./components/Footer/Footer";
+import Home from "./pages/Home.jsx";
+import About from "./components/About/About.jsx";
 
 const App = () => {
   useEffect(() => {
@@ -23,14 +19,14 @@ const App = () => {
   }, []);
 
   return (
+    
     <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
-      <Navbar />
-      <Hero />
-      <BrandsLogo />
-      <Services />
-      <Testimonial />
-      <BlogsComp />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home></Home>} ></Route>
+          <Route path="/about" element={<About/>}></Route>
+        </Routes>
+      </Router>
     </div>
   );
 };

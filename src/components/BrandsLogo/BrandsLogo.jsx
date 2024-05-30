@@ -1,9 +1,9 @@
 import React from "react";
-import Brand1 from "../../assets/brands/1.svg";
-import Brand2 from "../../assets/brands/2.svg";
-import Brand3 from "../../assets/brands/3.svg";
-import Brand4 from "../../assets/brands/4.svg";
-import Brand5 from "../../assets/brands/5.svg";
+import Brand1 from "../../assets/website/whea.jpg";
+import Brand2 from "../../assets/website/anjali.jpg";
+import Brand3 from "../../assets/website/campus2career.jpg";
+import Brand4 from "../../assets/website/futrueInter.jpg";
+import Brand5 from "../../assets/website/vanshika.jpg";
 
 const BrandsLogo = () => {
   return (
