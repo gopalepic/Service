@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 
 // Component import
 import Home from "./pages/Home.jsx";
-import About from "./components/About/About.jsx";
+import About from "./pages/About.jsx";
 
 const App = () => {
   useEffect(() => {

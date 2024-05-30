@@ -1,6 +1,6 @@
-import Navbar from '../Navbar/Navbar'
-import image from '../../assets/website/aboutus.jpeg'
-import Footer from '../Footer/Footer'
+import Navbar from '../components/Navbar/Navbar'
+import image from '../assets/website/aboutus.jpeg'
+import Footer from '../components/Footer/Footer'
 const About = () => {
     const Aboutus = [
         {
