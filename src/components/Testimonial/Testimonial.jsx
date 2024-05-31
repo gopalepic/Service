@@ -9,13 +9,13 @@ const testimonialData = [
     img: "https://picsum.photos/101/101",
   },
   {
-    id: 1,
+    id: 2,
     name: "David Calathan - Director of Design Operations, New York",
     text: "The results have been incredible. With Power Digital, it feels like they’re in our trench, supporting and understanding us. They’re like a partner and mentor in helping us get where we want to be.",
     img: "https://picsum.photos/102/102",
   },
   {
-    id: 1,
+    id: 3,
     name: "Smith - Director of Operations, New York",
     text: "The results have been incredible. With Power Digital, it feels like they’re in our trench, supporting and understanding us. They’re like a partner and mentor in helping us get where we want to be.",
     img: "https://picsum.photos/103/103",

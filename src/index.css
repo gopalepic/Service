@@ -18,3 +18,11 @@ html {
     @apply bg-primary text-white hover:bg-primary/80  duration-500 rounded-lg py-2 px-4;
   }
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body{
+  font-family: 'Anton', sans-serif;
+
+}
