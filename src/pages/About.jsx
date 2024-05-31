@@ -44,14 +44,13 @@ const About = () => {
    
     <div className='flex flex-col justify-between dark:bg-gray-950 p-10'>
    
-    <div className='text-4xl text-center '><b>About Us</b></div>
-    <div><img src={image} className='w-5' /></div>
+    <div className='text-4xl text-center text-primary'><b>About Us</b></div>
 
         <div >
           {
             Aboutus.map(({title,para}) => (
                <div className='bg-black border m-4 rounded-xl p-2'> 
-                <div className='text-3xl '><b>{title}</b></div>
+                <div className='text-3xl text-primary'><b>{title}</b></div>
                 <>{para}</>
                
                 </div>
