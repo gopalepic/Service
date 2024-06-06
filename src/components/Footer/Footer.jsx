@@ -119,7 +119,7 @@ const Footer = () => {
             <div className="">
               <div className="py-8 px-4 ">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
-                  Patner
+                  Partners
                 </h1>
                 <ul className="flex flex-col gap-3">
                   {ResourcesLinks.map((link) => (

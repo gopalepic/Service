@@ -20,7 +20,7 @@ const About = () => {
              <b>2) IT Consulting:</b> Expert advice to help you navigate the complexities of the digital landscape.<br />
             <b>3) Managed IT Services:</b>  End-to-end management of your IT infrastructure to ensure seamless performance.<br />
            <b>4) Cloud Solutions:</b> Scalable and secure cloud services that enhance flexibility and efficiency.<br />
-           <b>5)Cybersecurity:</b> Robust security measures to protect your data and IT assets.
+           <b>5) Cybersecurity:</b> Robust security measures to protect your data and IT assets.
   </p>
   
    },

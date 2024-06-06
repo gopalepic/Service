@@ -3,7 +3,7 @@ import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 import ResponsiveMenu from "./ResponsiveMenu";
 import Logo from "../../assets/website/kanthariya.png";
 import DarkMode from "./DarkMode";
-
+import { Navigate, useNavigate } from "react-router-dom";
 export const MenuLinks = [
   {
     id: 1,
@@ -22,6 +22,7 @@ export const MenuLinks = [
   },
 ];
 const Navbar = () => {
+  const navigate = useNavigate();
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -57,7 +58,7 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
-              <button className="primary-btn">Get in Touch</button>
+              <button className="primary-btn" onClick={()=> navigate('/contact')}>Get in Touch</button>
               <DarkMode />
             </ul>
           </nav>
