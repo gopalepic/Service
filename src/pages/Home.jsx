@@ -5,7 +5,6 @@ import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero/Hero";
 import BrandsLogo from "../components/BrandsLogo/BrandsLogo.jsx";
 import Service from "../components/Services/Service.jsx";
-import Testimonial from "../components/Testimonial/Testimonial";
 import BlogsComp from "../components/Blogs/BlogsComp.jsx";
 import Footer from "../components/Footer/Footer";
 
@@ -26,7 +25,6 @@ const Home = () => {
       <Hero />
       <BrandsLogo />
       <Service />
-      <Testimonial />
       <BlogsComp />
       <Footer />
     </div>
