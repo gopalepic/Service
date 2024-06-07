@@ -63,7 +63,7 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
-              <button className="primary-btn" onClick={()=> navigate('/contact')}>Get in Touch</button>
+              <button className="primary-btn">Get in Touch</button>
               <DarkMode />
             </ul>
           </nav>

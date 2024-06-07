@@ -84,7 +84,7 @@ const Services = () => {
           </div>
 
           {/* services cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4" >
             {skillsData.map((skill) => (
               <div
                 key={skill.name}
@@ -92,7 +92,7 @@ const Services = () => {
                 data-aos-delay={skill.aosDelay}
                 className="card space-y-3 sm:space-y-4 p-4 "
               >
-                <div className=" hover:bg-slate-950 p-5 rounded-lg">
+                <div className=" hover:bg-slate-200 p-5 rounded-lg" style={{height:"350px"}}>
                 
                 <div>{skill.icon}</div>
                 <h1 className="text-lg font-semibold">{skill.name}</h1>
@@ -110,7 +110,7 @@ const Services = () => {
             data-aos-offset="0"
             className="text-center mt-4 sm:mt-8"
           >
-            <button className="primary-btn" onClick={()=> navigate('/contact')}>Learn More</button>
+            {/* <button className="primary-btn" onClick={()=> navigate('/Contact')}>Learn More</button> */}
           </div>
         </div>
       </div>
