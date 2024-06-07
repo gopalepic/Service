@@ -1,57 +1,47 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-
+import { Navigate, useNavigate } from "react-router-dom";
 const FooterLinks = [
   {
     title: "About",
-    link: "/#about",
+    link: "/about",
   },
   {
-    title: "Features",
-    link: "/#features",
+    title: "Services",
+    link: "/services",
   },
   {
-    title: "Works",
-    link: "/#works",
+    title: "Projects",
+    link: "/#project",
   },
-  {
-    title: "Career",
-    link: "/#career",
-  },
+  
 ];
 const HelpLinks = [
+ 
   {
-    title: "Customer Support",
-    link: "/#support",
-  },
-  {
-    title: "Delivery Details",
+    title: "Contact us",
     link: "/#delivery-details",
   },
-  {
-    title: "Terms & Conditions",
-    link: "/#terms",
-  },
-  {
-    title: "Privacy Policy",
-    link: "/#policy",
-  },
+ 
 ];
 const ResourcesLinks = [
   {
     title: "WHEA",
-    link: "",
+    link: "https://Whea.in",
   },
   {
     title: "C2C",
-    link: "",
+    link: "https://campus2career.in/",
   },
   {
     title: "Future inter",
-    link: "",
+    link: "https://Futureintern.in ",
   },
 ];
 const Footer = () => {
+
+  const navigate = useNavigate();
+  
   return (
     <div className="bg-dark text-white">
       <section className="container py-10">
@@ -92,6 +82,9 @@ const Footer = () => {
                     <li
                       key={link.title}
                       className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-400 "
+                      onClick={() => {
+                          navigate(link.link)
+                      }}
                     >
                       <span>{link.title}</span>
                     </li>
@@ -109,7 +102,10 @@ const Footer = () => {
                     <li
                       key={link.title}
                       className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-400 "
-                    >
+                      onClick={() => {
+                        navigate(link.link)
+                    }}
+                   >
                       <span>{link.title}</span>
                     </li>
                   ))}
@@ -125,9 +121,10 @@ const Footer = () => {
                   {ResourcesLinks.map((link) => (
                     <li
                       key={link.title}
-                      className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-400 "
-                    >
-                      <span>{link.title}</span>
+                      className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-400 " 
+ >                       <a href={link.link} target="blank">  <span>{link.title}</span> </a> 
+                     
+
                     </li>
                   ))}
                 </ul>
