@@ -49,7 +49,7 @@ const About = () => {
         <div >
           {
             Aboutus.map(({title,para}) => (
-               <div className='bg-black border m-4 rounded-xl p-2'> 
+               <div className='border m-4 rounded-xl p-2'> 
                 <div className='text-3xl text-primary'><b>{title}</b></div>
                 <>{para}</>
                
