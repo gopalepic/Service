@@ -27,7 +27,44 @@ body{
 
 }
 
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .contact {
   position: relative;
   min-height: 700px;
@@ -62,7 +99,7 @@ body{
 .contact .contact-form-card,
 .contact .contact-info-card {
   padding: 35px;
-  background: #fff;
+  /* background: #fff; */
   min-height: 500px;
 }
 
@@ -72,6 +109,7 @@ body{
 
 .contact .contact-title {
   margin-bottom: 30px;
+  font-size: 30px;
 }
 
 .contact .contact-title::after {
@@ -81,4 +119,9 @@ body{
   background: #F85C70;
   display: block;
   margin-top: 10px;
+}
+
+.contact h1{
+  font-size: 25px;
+  margin: 50px 40% 20px 40%;
 }
