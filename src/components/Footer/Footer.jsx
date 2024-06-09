@@ -13,6 +13,10 @@ const FooterLinks = [
   {
     title: "Projects",
     link: "/#project",
+  }, 
+  {
+    title: "Contact us",
+    link: "/contact",
   },
   
 ];
@@ -51,21 +55,14 @@ const Footer = () => {
             <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3">
              Kanthariya technologies
             </h1>
-            <p className="text-sm">
-              Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit consectetur adipisicing elit ipsum
-              dolor sit amet consectetur. adipisicing{" "}
+            <p className="text-1xl">
+            Kanthariya: The future of technologies <br /> Cloud-based solutions to streamline your success
             </p>
             <br />
             {/* Social Handle */}
             <div className="flex items-center gap-4 mt-6">
-              <a href="#">
-                <FaInstagram className="text-2xl hover:text-primary duration-300" />
-              </a>
-              <a href="#">
-                <FaFacebook className="text-2xl hover:text-primary duration-300" />
-              </a>
-              <a href="#">
+              
+              <a href="https://www.linkedin.com/company/kanthariya-technologies/">
                 <FaLinkedin className="text-2xl hover:text-primary duration-300" />
               </a>
             </div>
@@ -92,7 +89,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="">
+            {/* <div className="">
               <div className="py-8 px-4 ">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
                   Help
@@ -111,7 +108,7 @@ const Footer = () => {
                   ))}
                 </ul>
               </div>
-            </div>
+            </div> */}
             <div className="">
               <div className="py-8 px-4 ">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
@@ -130,10 +127,23 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
+
+            <div className="w-55">
+              <div className=" py-8 px-4 bg-[#030712] rounded-2xl">
+                 <div  >
+                  <h1 className="text-2xl text-[#6153cd] font-bold text-center"> 
+                     Leave a message for Us...</h1> 
+                   <input type="text" className=" rounded"/>
+                  <div  className="text-center m-2 rounded-lg  bg-[#6153cd] text-black">send</div>
+
+              </div>
+            </div>
           </div>
+        </div>
         </div>
       </section>
     </div>
+    
   );
 };
 

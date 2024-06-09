@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { SlNote } from "react-icons/sl";
 import { FaFirefoxBrowser } from "react-icons/fa6";
 import { FaMobileButton } from "react-icons/fa6";
@@ -57,9 +57,11 @@ const skillsData = [
     aosDelay: "700",
   }
 ];
+
+
+
 const Services = () => {
 
-  const navigate = useNavigate();
   return (
     <>
     <Navbar></Navbar>
@@ -92,7 +94,7 @@ const Services = () => {
                 data-aos-delay={skill.aosDelay}
                 className="card space-y-3 sm:space-y-4 p-4 "
               >
-                <div className=" hover:bg-slate-900 p-5 rounded-lg" style={{height:"350px"}}>
+                <div className=" hover:bg-slate-900 p-5 rounded-lg" >
                 
                 <div>{skill.icon}</div>
                 <h1 className="text-lg font-semibold">{skill.name}</h1>

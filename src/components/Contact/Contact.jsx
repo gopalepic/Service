@@ -81,13 +81,8 @@ const Contact = () => {
                         </li>
                         <li className='flex'>
                         <div className="flex items-center gap-4 mt-6">
-              <a href="#">
-                <FaInstagram className="text-4xl hover:text-primary duration-300 bg-black-300 ark:text-white" />
-              </a>
-              <a href="#">
-                <FaFacebook className="text-4xl hover:text-primary duration-300 bg-black-300 ark:text-white" />
-              </a>
-              <a href="#">
+              
+              <a href="https://www.linkedin.com/company/kanthariya-technologies/">
                 <FaLinkedin className="text-4xl hover:text-primary duration-300 bg-black-300 ark:text-white" />
               </a>
             </div>

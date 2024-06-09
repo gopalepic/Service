@@ -23,7 +23,7 @@ export const MenuLinks = [
   {
     id: 4,
     name: "Projects",
-    link: "/#projects",
+    link: "/projects",
   },
 ];
 const Navbar = () => {
@@ -77,7 +77,7 @@ const Navbar = () => {
                 className=" cursor-pointer transition-all"
                 size={30}
               />
-            ) :(
+            ) : (
               <HiMenuAlt3
                 onClick={toggleMenu}
                 className="cursor-pointer transition-all"
