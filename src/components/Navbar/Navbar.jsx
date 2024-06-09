@@ -63,7 +63,7 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
-              <button className="primary-btn">Get in Touch</button>
+              <a href="/Contact" className="primary-btn">Get in Touch</a>
               <DarkMode />
             </ul>
           </nav>
@@ -77,7 +77,7 @@ const Navbar = () => {
                 className=" cursor-pointer transition-all"
                 size={30}
               />
-            ) : (
+            ) :(
               <HiMenuAlt3
                 onClick={toggleMenu}
                 className="cursor-pointer transition-all"

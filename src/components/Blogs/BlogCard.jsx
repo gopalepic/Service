@@ -1,7 +1,7 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa6";
 
-const BlogCard = ({ image, title, description }) => {
+const BlogCard = ({ image, title, description ,ulr}) => {
   return (
     <>
       <div className=" dark:text-white group">
@@ -16,7 +16,7 @@ const BlogCard = ({ image, title, description }) => {
           <h1 className="line-clamp-1 text-2xl font-semibold">{title}</h1>
           <p className="line-clamp-4 text-gray-500 text-sm">{description}</p>
           <div className="flex justify-end pr-4 text-gray-500">
-            <FaArrowRight className="group-hover:text-primary group-hover:translate-x-2 duration-300" />
+            <a href={ulr} target="_blank"><FaArrowRight className="group-hover:text-primary group-hover:translate-x-2 duration-300" /></a>
           </div>
         </div>
       </div>

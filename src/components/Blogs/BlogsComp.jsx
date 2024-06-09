@@ -13,6 +13,7 @@ const BlogsData = [
       "“The results have been incredible. With Power Digital, it feels like they’re in our trench, supporting and understanding us. They’re like a partner and mentor in helping us get where we want to be. “The results have been incredible.",
     author: "Someone",
     date: "April 22, 2022",
+    ulr: "https://campus2career.in/",
   },
   {
     id: 2,
@@ -22,15 +23,17 @@ const BlogsData = [
       "“The results have been incredible. With Power Digital, it feels like they’re in our trench, supporting and understanding us. They’re like a partner and mentor in helping us get where we want to be. “The results have been incredible. ",
     author: "Someone",
     date: "April 22, 2022",
+      ulr: "https://Futureintern.in ",
   },
   {
-    id: 3,
+    id: 4,
     image: Img3,
     title: "Womens Health And Education Alliance",
     description:
       "“The results have been incredible. With Power Digital, it feels like they’re in our trench, supporting and understanding us. They’re like a partner and mentor in helping us get where we want to be. “The results have been incredible. ",
     author: "Someone",
     date: "April 22, 2022",
+    ulr: "https://Whea.in",
   },
 ];
 
