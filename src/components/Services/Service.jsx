@@ -5,6 +5,7 @@ import { FaMobileButton } from "react-icons/fa6";
 import { MdOutlineDeveloperMode } from "react-icons/md";
 import { FaWordpress } from "react-icons/fa";
 import { TbPasswordMobilePhone } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 
 
@@ -88,7 +89,7 @@ const Service = () => {
                 data-aos-delay={skill.aosDelay}
                 className="card space-y-3 sm:space-y-4 p-4 "
               >
-                <div className=" hover:bg-slate-800 p-5 rounded-lg">
+                <div className=" hover:bg-slate-900 p-5 rounded-lg" >
                 
                 <div>{skill.icon}</div>
                 <h1 className="text-lg font-semibold">{skill.name}</h1>
@@ -106,7 +107,7 @@ const Service = () => {
             data-aos-offset="0"
             className="text-center mt-4 sm:mt-8"
           >
-            <button className="primary-btn">Learn More</button>
+            <a href="/services"><button className="primary-btn">Learn More</button></a>
           </div>
         </div>
       </div>

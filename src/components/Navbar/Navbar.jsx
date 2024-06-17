@@ -5,20 +5,25 @@ import Logo from "../../assets/website/kanthariya.png";
 import DarkMode from "./DarkMode";
 import { Navigate, useNavigate } from "react-router-dom";
 export const MenuLinks = [
+  
   {
     id: 1,
+    name: "Home",
+    link: "/",
+  },{
+    id: 2,
     name: "About",
     link: "/about",
   },
   {
-    id: 2,
+    id: 3,
     name: "Services",
     link: "/services ",
   },
   {
-    id: 3,
+    id: 4,
     name: "Projects",
-    link: "/#projects",
+    link: "/projects",
   },
 ];
 const Navbar = () => {
@@ -58,7 +63,7 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
-              <button className="primary-btn" onClick={()=> navigate('/contact')}>Get in Touch</button>
+              <a href="/Contact" className="primary-btn">Get in Touch</a>
               <DarkMode />
             </ul>
           </nav>

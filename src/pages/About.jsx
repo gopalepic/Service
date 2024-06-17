@@ -84,9 +84,7 @@ const About = () => {
             <h1 className='text-6xl font-bold ml-3 text-[#8c1d54]'>We Are </h1>
             <p className='p-1 md:text-xl md:p-2 lg:text-2xl lg:p-3'>
 
-            Your trusted partner in IT solutions and services since 2020. As a proud member of the expansive Kanthariya Group, we are dedicated to delivering excellence and innovation across various industries, including textiles, mills, and automobiles.
-             
-             </p>
+
                 </div>
  
     </div>

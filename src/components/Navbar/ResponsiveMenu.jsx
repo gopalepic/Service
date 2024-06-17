@@ -1,6 +1,5 @@
 import React from "react";
-import { FaUserCircle } from "react-icons/fa";
-
+import Logo from "../../assets/website/kanthariya.png";
 import { MenuLinks } from "./Navbar";
 
 const ResponsiveMenu = ({ showMenu }) => {
@@ -13,10 +12,10 @@ const ResponsiveMenu = ({ showMenu }) => {
     >
       <div className="card">
         <div className="flex items-center justify-start gap-3">
-          <FaUserCircle size={50} />
+            <img src={Logo} width="80px" style={{borderRadius:"50%"}}/>
           <div>
             <h1>Hello User</h1>
-            <h1 className="text-sm text-slate-500">Premium user</h1>
+            {/* <h1 className="text-sm text-slate-500">Premium user</h1> */}
           </div>
         </div>
         <nav className="mt-12">
@@ -26,13 +25,15 @@ const ResponsiveMenu = ({ showMenu }) => {
                 <a href={data.link} className="mb-5 inline-block">
                   {data.name}
                 </a>
-              </li>
+                </li>
             ))}
+             <a href="/Contact">Contact Us</a>
           </ul>
         </nav>
       </div>
      
     </div>
+
   );
 };
 

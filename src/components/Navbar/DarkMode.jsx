@@ -1,6 +1,5 @@
 import React from "react";
 import { BiSolidSun, BiSolidMoon } from "react-icons/bi";
-
 const DarkMode = () => {
   const [theme, setTheme] = React.useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"

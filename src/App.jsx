@@ -6,8 +6,9 @@ import "aos/dist/aos.css";
 // Component import
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
-// import Contact from "./pages/Contact.jsx";
+import Contact from "./components/Contact/Contact.jsx";
 import Services from "./pages/Services.jsx";
+import Projects from "./pages/Projects.jsx";
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -26,8 +27,9 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home></Home>} ></Route>
           <Route path="/about" element={<About/>}></Route>
-          {/* <Route path='/contact' element={<Contact/>}></Route> */}
+          <Route path='/contact' element={<Contact/>}></Route>
           <Route path="/services" element={<Services/>}></Route>
+          <Route path="/projects" element={<Projects/>}></Route>
         </Routes>
       </Router>
     </div>
