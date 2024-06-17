@@ -1,7 +1,32 @@
 import Navbar from '../components/Navbar/Navbar'
-import image from '../assets/website/aboutus.jpeg'
 import Footer from '../components/Footer/Footer'
+import gsap from 'gsap'
+import image from '../assets/website/bg1.jpg'
+import { useEffect, useLayoutEffect } from 'react'
+
+
 const About = () => {
+
+   useLayoutEffect(()=>{
+    let control = gsap.context(()=>{
+        const t1 = gsap.timeline()
+
+        t1.to('#values',{
+            opacity:0,
+           scrollTrigger:{
+            trigger:'#values',
+            start:'top 50%',
+            scrub:true
+           },
+           delay:1,
+           opacity:1,
+           duration:3
+           
+        })
+        
+    })
+   })    
+    
     const Aboutus = [
         {
             title:"",
@@ -41,23 +66,62 @@ const About = () => {
   return (
     <div className=''>
         <div><Navbar></Navbar></div>
+<div>
    
-    <div className='flex flex-col justify-between dark:bg-gray-950 p-10'>
-   
-    <div className='text-4xl text-center text-primary'><b>About Us</b></div>
+   <div className='m-[5%]'>
+    <div className=''>
+              <h1 className='text-2xl font-extrabold md:text-4xl lg:text-6xl'> Request Get <span className='bg-gradient-to-r from-white to-[#6153cd] animate-pulse text-black rounded-xl'>Live</span>  </h1>
+               <p className='p-1 md:text-xl md:p-2 lg:text-xl lg:p-3' >At your door ... With <span className='underline'>Kanthariya</span></p>
+               <div className=''>
+                 <img src={image} className='object-cover'/>
+               </div>
 
-        <div >
-          {
-            Aboutus.map(({title,para}) => (
-               <div className='border m-4 rounded-xl p-2'> 
-                <div className='text-3xl text-primary'><b>{title}</b></div>
-                <>{para}</>
-               
-                </div>
-            ))
-          }  </div>
     </div>
-    <Footer></Footer>
+    <div id='values'>
+        <div className='border w-2/4 backdrop-blur rounded-lg 
+        shadow-md bg-black opacity-80 z-1 absolute -my-[30%] m-[10%]
+         '>
+            <h1 className='text-6xl font-bold ml-3 text-[#8c1d54]'>We Are </h1>
+            <p className='p-1 md:text-xl md:p-2 lg:text-2xl lg:p-3'>
+
+
+                </div>
+ 
+    </div>
+
+    <div className='my-[3%] w-3/4 backdrop-blur rounded-lg border
+        shadow-md bg-black 
+         '>
+            <h1 className='text-2xl font-bold ml-3 text-[#8c1d54]'>Vision</h1>
+            <p className='text-3xl p-3'>
+
+            Our vision is to empower businesses with innovative IT solutions that foster growth and success. We strive to be a global leader in the IT industry, recognized for our commitment to excellence, integrity, and customer satisfaction.             
+            </p>
+        </div>
+
+        <div>
+        <div id='services' className='
+        my-[3%] w-3/4 backdrop-blur rounded-lg border
+        shadow-md bg-black 
+         '>
+            <h1 className='text-2xl font-bold ml-3 text-[#8c1d54]'>Services</h1>
+            <p className=' text-2xl p-3'>At Kanthariya Technologies, we offer a comprehensive range of IT services designed to optimize your business operations and drive growth  <br/>
+             Our services include:
+              <br/>
+             <b>1) Custom Software Development</b> : Tailored solutions that fit your unique business requirements.<br/>
+             <b>2) IT Consulting:</b> Expert advice to help you navigate the complexities of the digital landscape.<br />
+            <b>3) Managed IT Services:</b>  End-to-end management of your IT infrastructure to ensure seamless performance.<br />
+           <b>4) Cloud Solutions:</b> Scalable and secure cloud services that enhance flexibility and efficiency.<br />
+           <b>5) Cybersecurity:</b> Robust security measures to protect your data and IT assets.
+  </p>
+        </div>
+        </div>
+
+   </div>
+ 
+</div>
+
+   <div className="bottom-0"> <Footer></Footer></div>
      </div>
   )
 }
