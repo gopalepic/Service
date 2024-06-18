@@ -107,7 +107,7 @@ const About = () => {
         shadow-md bg-black 
          '>
             <h1 className='text-2xl font-bold ml-3 text-[#8c1d54]'>Services</h1>
-            <p className='text-sm p-2 md:text-xl lg:text-xl'>At Kanthariya Technologies, we offer a comprehensive range of IT services designed to optimize your business operations and drive growth  <br/>
+            <p className='text-sm p-2 md:text-xl lg:text-2xl'>At Kanthariya Technologies, we offer a comprehensive range of IT services designed to optimize your business operations and drive growth  <br/>
              Our services include:
               <br/>
              <b>1) Custom Software Development</b> : Tailored solutions that fit your unique business requirements.<br/>
@@ -118,7 +118,6 @@ const About = () => {
   </p>
         </div>
        
-
    </div>
  
 </div>
