@@ -78,34 +78,36 @@ const About = () => {
 
     </div>
     <div id='values'>
-        <div className='border w-2/4 backdrop-blur rounded-lg 
-        shadow-md bg-black opacity-80 z-1 absolute -my-[30%] m-[10%]
+        <div className='border w-3/4 md:w-3/5 lg:w-1/2 backdrop-blur rounded-lg 
+        shadow-md bg-black opacity-80 z-1 absolute -my-[44%] m-[4%] md:-my-[40%] md:m-[7%]  lg:-my-[30%] lg:m-[10%] 
+          
          '>
-            <h1 className='text-6xl font-bold ml-3 text-[#8c1d54]'>We Are </h1>
-            <p className='p-1 md:text-xl md:p-2 lg:text-2xl lg:p-3'>your trusted partner in IT solutions and services since 2020. As a proud member of the expansive Kanthariya Group, we are dedicated to delivering excellence and innovation across various industries, including textiles, mills, and automobiles.
+            <h1 className='text-2xl font-bold ml-1 md:text-4xl md:ml-2 xl:text-6xl xl:ml-3 text-[#8c1d54]'>We Are </h1>
+            <p className=' p-1 text-sm md:text-xl md:p-2 lg:text-2xl lg:p-3'>your trusted partner in IT solutions and services since 2020. As a proud member of the expansive Kanthariya Group, we are dedicated to delivering excellence and innovation across various industries, including textiles, mills, and automobiles.
             </p>
 
                 </div>
  
     </div>
 
-    <div className='my-[3%] w-3/4 backdrop-blur rounded-lg border
+    <div className='my-[3%]  md:w-3/4 lg:3/4 backdrop-blur rounded-lg 
         shadow-md bg-black 
          '>
             <h1 className='text-2xl font-bold ml-3 text-[#8c1d54]'>Vision</h1>
-            <p className='text-3xl p-3'>
+            <p className='text-sm p-2 md:text-xl lg:text-xl'>
 
             Our vision is to empower businesses with innovative IT solutions that foster growth and success. We strive to be a global leader in the IT industry, recognized for our commitment to excellence, integrity, and customer satisfaction.             
             </p>
         </div>
 
-        <div>
-        <div id='services' className='
-        my-[3%] w-3/4 backdrop-blur rounded-lg border
+<hr />
+        
+        <div id='services' className=' lg:3/4
+        my-[3%]  backdrop-blur rounded-lg 
         shadow-md bg-black 
          '>
             <h1 className='text-2xl font-bold ml-3 text-[#8c1d54]'>Services</h1>
-            <p className=' text-2xl p-3'>At Kanthariya Technologies, we offer a comprehensive range of IT services designed to optimize your business operations and drive growth  <br/>
+            <p className='text-sm p-2 md:text-xl lg:text-xl'>At Kanthariya Technologies, we offer a comprehensive range of IT services designed to optimize your business operations and drive growth  <br/>
              Our services include:
               <br/>
              <b>1) Custom Software Development</b> : Tailored solutions that fit your unique business requirements.<br/>
@@ -115,7 +117,7 @@ const About = () => {
            <b>5) Cybersecurity:</b> Robust security measures to protect your data and IT assets.
   </p>
         </div>
-        </div>
+       
 
    </div>
  
