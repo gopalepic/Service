@@ -128,15 +128,14 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-55">
+            <div className="hidden  lg:flex lg:w-50" >
               <div className=" py-8 px-4 bg-[#030712] rounded-2xl">
-                 <div  >
+                
                   <h1 className="text-2xl text-[#6153cd] font-bold text-center"> 
                      Leave a message for Us...</h1> 
                    <input type="text" className=" rounded"/>
                   <div  className="text-center m-2 rounded-lg  bg-[#6153cd] text-black">send</div>
-
-              </div>
+             
             </div>
           </div>
         </div>
