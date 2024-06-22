@@ -89,26 +89,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            {/* <div className="">
-              <div className="py-8 px-4 ">
-                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
-                  Help
-                </h1>
-                <ul className="flex flex-col gap-3">
-                  {HelpLinks.map((link) => (
-                    <li
-                      key={link.title}
-                      className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-400 "
-                      onClick={() => {
-                        navigate(link.link)
-                    }}
-                   >
-                      <span>{link.title}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div> */}
+            
             <div className="">
               <div className="py-8 px-4 ">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
@@ -128,15 +109,14 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-55">
+            <div className="hidden  lg:flex lg:w-50" >
               <div className=" py-8 px-4 bg-[#030712] rounded-2xl">
-                 <div  >
+                
                   <h1 className="text-2xl text-[#6153cd] font-bold text-center"> 
                      Leave a message for Us...</h1> 
                    <input type="text" className=" rounded"/>
                   <div  className="text-center m-2 rounded-lg  bg-[#6153cd] text-black">send</div>
-
-              </div>
+             
             </div>
           </div>
         </div>
