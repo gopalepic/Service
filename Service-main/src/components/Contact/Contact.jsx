@@ -82,7 +82,7 @@ const Contact = () => {
                         <li className='flex'>
                         <div className="flex items-center gap-4 mt-6">
               
-              <a href="https://www.linkedin.com/company/kanthariya-technologies/">
+              <a href="https://www.linkedin.com/company/kanthariya-technologies/" target='black'>
                 <FaLinkedin className="text-4xl hover:text-primary duration-300 bg-black-300 ark:text-white" />
               </a>
             </div>
