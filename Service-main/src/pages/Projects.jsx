@@ -4,7 +4,7 @@ import Footer from '../components/Footer/Footer'
 import Img1 from "../assets/website/campus2career.jpg";
 import Img2 from "../assets/website/futrueInter.jpg";
 import Img3 from "../assets/website/whea.jpg";
-import BlogCard from '../components/Blogs/BlogCard';
+import Cards from '../components/Blogs/Cards';
 const Projects = () => {
 
     const projects = [
@@ -49,7 +49,7 @@ const Projects = () => {
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((item) => (
-              <BlogCard  key={item.id} {...item} 
+              <Cards  key={item.id} {...item} 
               
               />
             ))

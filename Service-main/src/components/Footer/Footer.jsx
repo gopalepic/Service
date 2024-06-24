@@ -62,8 +62,8 @@ const Footer = () => {
             {/* Social Handle */}
             <div className="flex items-center gap-4 mt-6">
               
-              <a href="https://www.linkedin.com/company/kanthariya-technologies/">
-                <FaLinkedin className="text-2xl hover:text-primary duration-300" />
+              <a href="https://www.linkedin.com/company/kanthariya-technologies/" target="_blank">
+                <FaLinkedin className="text-2xl hover:text-primary duration-300"/>
               </a>
             </div>
           </div>
@@ -114,7 +114,7 @@ const Footer = () => {
                 
                   <h1 className="text-2xl text-[#6153cd] font-bold text-center"> 
                      Leave a message for Us...</h1> 
-                   <input type="text" className=" rounded"/>
+                   <input type="text" className=" rounded text-black"/>
                   <div  className="text-center my-2 rounded  bg-[#6153cd] text-black" style={{marginRight:"6px"}}>send</div>
              
             </div>

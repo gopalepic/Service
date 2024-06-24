@@ -1,6 +1,6 @@
 import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'
-import image from '../assets/website/background1.jpeg'
+import image from '../assets/website/background.jpg'
 import React from 'react'
 
 const About = () => {
@@ -13,9 +13,9 @@ const About = () => {
    <div className='m-[5%]'>
     <div className=''>
               <h1 className='text-2xl font-extrabold md:text-4xl lg:text-6xl'> Request Get <span className='bg-gradient-to-r from-white to-[#6153cd] animate-pulse text-black rounded-xl'>Live</span>  </h1>
-               <p className='p-1 md:text-xl md:p-2 lg:text-xl lg:p-3' >At your door ... With <span className='underline'>Kanthariya</span></p>
-               <div className='h-screen'>
-                 <img src={image}  className='object-cover'/>
+               <p className='p-1 md:text-xl md:p-2 lg:text-xl lg:p-3' >At your door ... With <span className='underline'>Kanthariya Technologies</span></p>
+               <div className=''>
+                 <img src={image}  className='object-cover h-[100vh] w-screen'/>
                </div>
 
     </div>

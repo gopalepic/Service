@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero/Hero";
 import BrandsLogo from "../components/BrandsLogo/BrandsLogo.jsx";
 import Service from "../components/Services/Service.jsx";
-import BlogsComp from "../components/Blogs/BlogsComp.jsx";
+import ProjectsComp from "../components/Blogs/ProjectsComp.jsx";
 import Footer from "../components/Footer/Footer";
 
 
@@ -19,13 +19,14 @@ const Home = () => {
         });
         AOS.refresh();
       }, []);
+
   return (
     <div >
       <Navbar />
       <Hero />
       <BrandsLogo />
       <Service />
-      <BlogsComp />
+      <ProjectsComp />
       <Footer />
     </div>
   )

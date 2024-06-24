@@ -1,29 +1,9 @@
 import React from "react";
-import { FaArrowRight } from "react-icons/fa6";
 
-const BlogCard = ({ image, title, description ,ulr}) => {
+const Cards = ({ image, title, description ,ulr}) => {
   return (
     <>
-      {/* <div className=" dark:text-white group">
-        <div className="overflow-hidden ">
-          <img
-            src={image}
-            alt="No image"
-            className="mx-auto h-[420px] w-full object-cover group-hover:scale-105 duration-300"
-          />
-        </div>
-        <div className="space-y-2 p-4 ml-6 bg-white dark:bg-slate-950 -translate-y-16">
-          <h1 className="line-clamp-1 text-2xl font-semibold"></h1>
-          <p className="line-clamp-4 text-gray-500 text-sm"></p>
-          <div className="flex justify-end pr-4 text-gray-500">
-            <a href={ulr} target="_blank"><FaArrowRight className="group-hover:text-primary group-hover:translate-x-2 duration-300" /></a>
-          </div>
-        </div>
-      </div> */}
-
-
-
-      
+   
 
 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href={ulr}>
@@ -47,4 +27,4 @@ const BlogCard = ({ image, title, description ,ulr}) => {
   );
 };
 
-export default BlogCard;
+export default Cards;

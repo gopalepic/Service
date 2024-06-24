@@ -1,5 +1,5 @@
 import React from "react";
-import BlogCard from "./BlogCard";
+import Card from "./Cards";
 import Img1 from "../../assets/website/campus2career.jpg";
 import Img2 from "../../assets/website/futrueInter.jpg";
 import Img3 from "../../assets/website/whea.jpg";
@@ -36,7 +36,7 @@ const projects = [
   },
 ];
 
-const BlogsComp = () => {
+const ProjectsComp = () => {
  
   return (
     <>
@@ -47,7 +47,7 @@ const BlogsComp = () => {
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((item) => (
-              <BlogCard  key={item.id} {...item} 
+              <Card  key={item.id} {...item} 
               
               />
             ))
@@ -61,4 +61,4 @@ const BlogsComp = () => {
   );
 };
 
-export default BlogsComp;
+export default ProjectsComp;

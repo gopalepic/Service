@@ -20,6 +20,12 @@ const App = () => {
     AOS.refresh();
   }, []);
 
+  
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on component mount
+  }, []); // Empty dependency array ensures it runs only once on mount
+
+
   return (
     
     <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
